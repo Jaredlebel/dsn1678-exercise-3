@@ -1,14 +1,27 @@
-var button = $('.sales');
-var aside = $('.sales__details');
+var buttonLeft = $('.sales-left');
+var buttonRight = $('.sales-right');
+var asideLeft = $('.sdl');
+var asideRight = $('.sdr');
 
 var buttonClickHandler = function () {
-    var currentState = aside.attr('data-state');
+    var currentState = asideLeft.attr('data-state');
     
     if (currentState == 'active') {
-        aside.attr('data-state', 'inactive');
+        asideLeft.attr('data-state', 'inactive');
     } else {
-        aside.attr('data-state', 'active'); 
+        asideLeft.attr('data-state', 'active'); 
     }
 };
 
-button.on('click', buttonClickHandler);
+var buttonClickHandler = function () {
+    var currentState = asideRight.attr('data-state');
+    
+    if (currentState == 'active') {
+        asideRight.attr('data-state', 'inactive');
+    } else {
+        asideRight.attr('data-state', 'active'); 
+    }
+};
+
+buttonLeft.on('click', buttonClickHandlerLeft);
+buttonRight.on('click', buttonClickHandlerRight);
