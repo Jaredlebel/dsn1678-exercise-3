@@ -1,4 +1,4 @@
-var article = $('.sales');
+var button = $('.sales');
 var aside = $('.sales__details');
 
 var buttonClickHandler = function () {
@@ -11,4 +11,4 @@ var buttonClickHandler = function () {
     }
 };
 
-article.on('click', buttonClickHandler);
+button.on('click', buttonClickHandler);
