@@ -90,10 +90,36 @@ body {
     display: none;
   background-color: #000;
   border-radius: 6px;
+    top: 19rem;
+    -webkit-animation: slide-up 300ms ease-in-out;
+    animation: slide-up 300ms ease-in-out;
 }
 
 .sales__details[data-state="active"] {
     display: block;
+    top: 15rem;
+}
+
+@keyframes slide-up {
+    0% {
+        top: 19rem;  
+        opacity: 0;
+    }
+    100% {
+        top: 15rem;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-up {
+    0% {
+        top: 19rem; 
+        opacity: 0;
+    }
+    100% {
+        top: 15rem;
+        opacity: 1;
+    }    
 }
 
 .sales__details::before {
@@ -109,6 +135,8 @@ body {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #000;
 }
+
+
 
 .chart-list {
   margin: 0;

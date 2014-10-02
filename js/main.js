@@ -3,7 +3,7 @@ var buttonRight = $('.sales-right');
 var asideLeft = $('.sdl');
 var asideRight = $('.sdr');
 
-var buttonClickHandler = function () {
+var buttonClickHandlerLeft = function () {
     var currentState = asideLeft.attr('data-state');
     
     if (currentState == 'active') {
@@ -13,7 +13,7 @@ var buttonClickHandler = function () {
     }
 };
 
-var buttonClickHandler = function () {
+var buttonClickHandlerRight = function () {
     var currentState = asideRight.attr('data-state');
     
     if (currentState == 'active') {
